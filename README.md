@@ -4,9 +4,10 @@
 
 Create an interactive webpage displaying Bacteria data from Belly Button swabs.  
 
-> Resources\
-> Data: samples.json
-> Software: HTML/CSS, JavaScript, VS Code, Bootstrap, D3.js, JSON, GitHubPages
+> ***Resources***\
+> Data: samples.json\
+> Software: HTML/CSS, JavaScript, VS Code, Bootstrap, D3.js, JSON, GitHubPages\
+> Website image from [atcc.org](https://www.atcc.org/resources/culture-guides/bacteriology-culture-guide)
 
 ## Results
 
@@ -19,7 +20,9 @@ The bottom chart is a bubble chart
 representing the following information:
 * The otu_ids as the x-axis values.
 * The sample_values as the y-axis values and marker size.
-* The otu_ids as the marker colors.
-* The otu_labels as the hover-text values.
+* The otu_ids as the marker colors using the Viridis color gradient.
+* The otu_labels as the hover-text values.\
+
+Finally, if the user gets lost viewing and interacting with the subject ids and bubble chart, a home button at the top left corner resets the page to its default settings at subject 940.
 
 The website can be viewed and navigated through Github Pages at this [link](https://mrlinares.github.io/plotlyDeployment/index.html).
