@@ -1,0 +1,28 @@
+.navbar{
+    font-family:  Monaco, monospace;
+}
+
+.jumbotron{
+    font-family: Papyrus, fantasy;
+}
+
+.row{
+    font-family: Monaco, monospace;
+}
+
+footer{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-color: #333333;
+}
+
+p.copyright {
+    position: absolute;
+    width: 100%;
+    color: white;
+    line-height: 40px;
+    font-size: 0.7em;
+    text-align: center;
+    bottom:0;
+}

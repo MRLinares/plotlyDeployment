@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color:#333333">
+  <div class="wrapper">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <a class="navbar-brand" style="color:whitesmoke" href="index.html"><b>Home</b></a>
+    </nav>
+  </div>
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 jumbotron text-center" style="background-image: url('https://www.atcc.org/-/media/images/atcc/1440x300/ra-0252_1440x300_overlay.jpg?h=300&w=1440&rev=9a6296f767b1450181f714f32e5cba59&hash=58CDE2604E06935E01279F208A98F024');
+        background-size: cover; background-position: center; color: black">
+          <h1><b>Belly Button Biodiversity Dashboard</b></h1>
+          <h3><i>Use the interactive charts below to explore the dataset</i></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well" style="background-color:white">
+            <h5><b>Test Subject ID No.:</b></h5>
+            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Demographic Info</h3>
+            </div>
+            <div id="sample-metadata" class="panel-body"></div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div id="bar"></div>
+        </div>
+        <div class="col-md-5 ml-auto">
+          <div id="gauge"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div id="bubble"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="copyright">Manny Linares<br>Columbia University Data Analytics Bootcamp 2022</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <!-- My Logic -->
+  
+  <script src="charts.js"></script>
+
+</body>
+
+</html>
